@@ -61,6 +61,7 @@ app.post('/validate-me', (req, res) => {
   }
   // yes -- success
   else {
+    // send success and add STAY_DURATION to meta config
     res.send({
         STAY_DURATION: parsedStayDuration
     });
